@@ -1,0 +1,175 @@
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* 2 column layout */
+@media screen and (max-width: 1000px) {
+	#body {padding-left: 200px; margin-right:2%;}
+	}
+/* 2 column layout */
+@media screen and (max-width: 760px) {
+	#body {padding-left:0; padding-top:0; margin-left:2%; margin-right:2%;}
+	#branding {
+		position: relative;
+		margin:50px 2% 2%;
+		width:auto;
+		text-align: left;
+	}
+	#branding hgroup{padding:0px 10px;}
+	#searchform{
+		position:absolute;
+		top:-45px;
+		right:1%;
+		background:none !important;
+		border:none;
+	}
+	nav#social{
+		position:absolute;
+		top:-55px;
+		left:1%;
+		border:none !important;
+	}
+	nav#social ul li a:link{
+		border:1px solid #999 !important; 
+		background-color:#999 !important; 
+		height:24px; width:24px;
+		background-image:url(../img/smi-24.png);
+	}
+	nav#social ul li a.fb{background-color:transparent; background-position:bottom left;}
+	nav#social ul li a.tw{background-color:transparent; background-position:bottom right;}
+	nav#social ul li a.rss{background-color:transparent; background-position:bottom center;}
+	
+	nav#social ul li a:hover{
+		background-image:url(../img/smi-24.png) !important;
+	}
+	#access{
+		-webkit-border-bottom-right-radius: 10px;
+		-webkit-border-bottom-left-radius: 10px;
+		-moz-border-radius-bottomright: 10px;
+		-moz-border-radius-bottomleft: 10px;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		text-align:center;
+		margin:0 auto;
+	}
+	#access ul{margin:0 auto; text-align:center;}
+	#access ul,
+	#access ul li {
+		display:inline;
+		width:auto;
+		clear:none;
+		margin:0px;
+		padding:0px;
+		text-align:center;
+	}
+	#access ul ul{
+		width:120px;
+		left:0px;
+		top:32px;
+	}
+	#access ul ul ul{
+		left:115px;
+		top:0px;
+	}
+	#access ul ul li{
+		width:120px;
+	}
+	#access a{
+		padding:8px 10px; 
+		border-bottom:1px solid transparent; 
+		display:inline-block;
+	}
+	#access ul li:hover > a,
+	#access ul li > a:focus {
+		margin-right:0px;
+		margin-left:0px;
+	}
+	}
+/* small 1 column */
+@media screen and (max-width: 600px) {
+	#body{
+		padding:0px; 
+		margin:0 2% 2%;
+	}
+	#content {
+    	margin-right:0;
+    	padding-right:0;
+	}
+	aside.sidebar{clear:both; float:none; margin:2%; width:98%;}
+	#footer section {display:none;}
+}
+/* iphone landscape */
+@media screen and (max-width: 480px) {
+	html {-webkit-text-size-adjust: 100%;}
+	#pagewrap {max-width: 92%;}
+	.ad, .banners {display: none !important;}
+	/* reset post nav to block */
+	.post-nav li {float: none; width: 92%;}
+	/* hide footer section */
+	#footer section {display: none;}
+	#footer .credits {display: block;}
+	#footer .credits .sponsor {display: none;}
+}
+/* iphone portrait */
+@media screen and (max-width: 320px) {
+	#main-nav ul {left: -15px;}
+	#main-nav a {background: none; padding: 0; margin-right: 10px;}
+	.post-title {padding-right: 76px; font-size: 30px;}
+	.single .post-title {padding-right: 44px;}
+	.post-title sup {top: -4px; right: -10px;}
+	.single .post-title sup {right: -4px;}
+	.post-image {position: absolute; top: 2px; right: 0;}
+	.post-image img {width: 60px; height: auto; padding: 3px;}
+	.ie8 .post-image img { min-width: 60px;}
+	.post-meta {margin: 0 0 10px;}
+	.commentlist .avatar {
+		width: 45px !important;
+		height: 45px !important;
+		-webkit-background-size: 45px 45px;
+		-moz-background-size: 45px 45px;
+		-o-background-size: 45px 45px;
+		background-size: 45px 45px;
+		margin-top: -5px;
+	}
+	/* featured tabs */
+	.featured-posts li {
+		display: block;
+		width: auto;
+		margin: 0;
+		padding: 0;
+		text-align: left;
+	}
+	.featured-posts img {
+		width: 50px;
+		float: left;
+		margin: 0 5% 5% 0;
+	}
+	.featured-posts h2 {
+		font: normal 100% Georgia, 'Droid Serif', arial, serif;
+		margin: 0 0 4px;
+		padding-top: 10px;
+	}
+	.all-posts li {padding: 5px 65px 6px 28px;}
+	.all-posts h2 {font-size: 100%; margin: 0 0;}
+	.all-posts p {font-size: 70%; width: 60px; top: 5px;}
+	.all-posts p span {font-size: 140%; margin: 0;}
+}
+
+/**
+ * Print styles.
+ *
+ * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
+ */
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
+  -ms-filter: none !important; } /* Black prints faster: sanbeiji.com/archives/953 */
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */
+  tr, img { page-break-inside: avoid; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3{ page-break-after: avoid; }
+}

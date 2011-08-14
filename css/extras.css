@@ -1,0 +1,441 @@
+/************************************************************************************
+ PREVIEW BUTTON
+*************************************************************************************/
+
+
+/************************************************************************************
+ GALLERY
+*************************************************************************************/
+.gallery {
+	margin: 0 0 15px;
+	padding: 0;
+	clear: both;
+}
+.gallery li {
+	margin: 0 0 10px;
+	padding: 5px 10px;
+	list-style: none;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	font-size: 95%;
+	color: #666;
+}
+.ie7 .gallery li {
+	display: inline;
+}
+
+/************************************************************************************
+ IMAGE STYLE
+*************************************************************************************/
+.post-content figure, .post-content p.image {
+	margin: 0 0 2.5em;
+}
+figure figcaption {
+	text-align: center;
+	color: #777;
+}
+figure img, .image img, .gallery img, img.image {
+	background: #fff;
+	padding: 5px;
+}
+figure.right, .image.right {
+	margin-left: 5%;
+}
+figure.left, .image.left {
+	margin-right: 5%;
+}
+.post-image img {
+	padding: 4px;
+}
+.nostyle img {
+	background-color: transparent;
+	padding: 0;
+	border: none;
+}
+
+/************************************************************************************
+PAGE NAVIGATION
+*************************************************************************************/
+.pagenav {
+	clear: both;
+	font-size: 110%;
+	color: #a1a096;
+	padding-bottom: 20px;
+}
+.pagenav a {
+	padding: 3px 4px;
+	margin: 0 3px;
+	position: relative;
+}
+.pagenav a:hover {
+	background-color: #f5ec82;
+}
+.pagenav a, .pagenav .number, .pagenav .page-numbers, .pagenav span {
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+	float: left;
+}
+.pagenav .current {
+	color: #666;
+	text-decoration: none;
+	padding: 3px 1px 4px 0;
+	width: 27px;
+}
+
+/* next/prev nav */
+.pagenav .prev, .pagenav .next {
+	text-indent: -9000em;
+	background-color: rgba(255,255,255,.4);
+	width: 22px;
+	height: 22px;
+	margin-top: 2px;
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	-webkit-transition: background-color .7s;
+	-moz-transition: background-color .7s;
+	-o-transition: background-color .7s;
+	transition: background-color .7s;
+}
+.pagenav .next {
+	background-position: -2px -881px;
+}
+.pagenav .next:hover, .pagenav .prev:hover {
+	background-color: #f5ec82;
+	background-color: rgba(245,236,130,.8);
+	text-decoration: none;
+}
+/* next / prev comments hover */
+.pagenav em {
+	min-width: 50px;
+	text-align: center;
+	letter-spacing: 1px;
+	text-indent: 0;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #666;
+	position: absolute;
+	top: -26px;
+	left: -13px;
+	z-index: 2;
+	background: #fff;
+	border: solid 1px #ccc;
+	padding: 4px 1px;
+	white-space: nowrap;
+	display: none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.pagenav em:after {
+    content: " ";
+	font-size: 0px; 
+	line-height: 0%; 
+	width: 0px;
+	border-top: 5px solid #999;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	position: absolute;
+	bottom: -5px;
+	left: 47%;
+	z-index: 1;
+}
+.pagenav a:hover > em {
+	display: block;
+}
+
+/************************************************************************************
+ POST NAVIGATION
+*************************************************************************************/
+.post-nav {
+	padding-top: 30px;
+	margin: 20px 0 10px;
+	clear: both;
+}
+.post-nav li {
+	margin: 0 0 10px;
+	padding: 0;
+	list-style: none;
+	float: left;
+	width: 45%;
+}
+.post-nav span {
+	width: 30px;
+	height: 30px;
+	display: block;
+	float: left;
+	margin: 3px 5px 25px 0;
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	-webkit-transition: background-color .7s;
+	-moz-transition: background-color .7s;
+	-o-transition: background-color .7s;
+	transition: background-color .7s;
+}
+
+.post-nav em {
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: 2px;
+	letter-spacing: .2em;
+	color: #7e7e73;
+}
+.post-nav a {
+	text-decoration: none;
+	font-size: 115%;
+	color: #91070b;
+}
+.post-nav a:hover {
+	text-decoration: none;
+	color: #000;
+}
+.post-nav a:hover span {
+	background-color: #f5ec82;
+	background-color: rgba(245,236,130,.8);
+}
+.post-nav .next {
+	float: right;
+	text-align: right;
+}
+.post-nav .next span {
+	float: right;
+	background-position: -2px -1072px;
+	margin: 3px 0 25px 5px;
+}
+
+/************************************************************************************
+ COMMENTS
+*************************************************************************************/
+.commentwrap {
+	margin: 40px 0 20px;
+	padding: 30px 0 0;
+	position: relative;
+	clear: both;
+}
+.comment-title {
+	color: #603913;
+	text-transform: uppercase;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+/* commentlist */
+.commentlist {
+	font-size: 95%;
+	padding: 10px 0 15px;
+	margin: 0;
+	clear: both;
+	word-wrap: break-word;
+}
+.commentlist li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	clear: both;
+}
+.commentlist .comment-author {
+	padding: 15px 0 0;
+	margin: 0;
+}
+/* avatar */
+.avatar {
+	width: 60px;
+	height: 60px;
+	background-color: #fff;
+	border: solid 3px #fff;
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0, .2);
+	-moz-box-shadow: 0 1px 0 rgba(0,0,0, .2);
+	box-shadow: 0 1px 0 rgba(0,0,0, .2);
+}
+.commentlist .avatar {
+	float: left;
+	margin: -8px 12px 5px 0;
+}
+.commentlist cite {
+	text-transform: capitalize;
+	color: #36160b;
+	margin-right: 30px;
+}
+.commentlist cite a {
+	color: #75280c;
+	text-decoration: none;
+}
+.commentlist .author cite {
+	padding-right: 58px;
+}
+.commentlist .comment-time {
+	text-transform: uppercase;
+	color: #8c8c86;
+}
+.commentlist .commententry {
+	position: relative;
+	overflow: hidden;
+	margin-top: 2px;
+}
+.commentlist .commententry p {
+	padding: 0;
+	margin: 0 0 1em;
+}
+/* commentlist child ul */
+.commentlist ul, .commentlist ol {
+	margin: 0;
+	padding: 0 0 0 8%;
+}
+/* reply link */
+.commentlist .reply {
+}
+.commentlist .comment-reply-link {
+	font-size: 11px;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding-left: 12px;
+	color: #ca6149;
+}
+.commentlist .comment-reply-link:hover {
+	text-decoration: none;
+	border-bottom: solid 1px #ccc;
+}
+/* comment form */
+#respond {
+	padding: 40px 0 20px;
+	margin: 0;
+	position: relative;
+	clear: both;
+}
+.commentlist #respond {
+	margin-top: 0;
+	width: 90%;
+	margin-left: 10%;
+}
+/* cancel reply link */
+#respond .cancel-comment-reply a {
+	text-transform: uppercase;
+	color: #ba8985;
+	position: absolute;
+	top: 13px;
+	right: 0;
+	font-size: 85%;
+	text-decoration: none;
+	padding: 3px 0 3px 28px;
+	background: url(images/nav-icons.png) no-repeat -3px -1680px;
+}
+#respond .cancel-comment-reply a:hover {
+	color: #000;
+}
+#commentform {
+	margin: 15px 0 0;
+}
+#commentform input[type=text] {
+	width: 206px;
+	margin-right: 5px;
+}
+#commentform textarea {
+	height: 140px;
+}
+#commentform input#submit {
+	padding: 7px 20px;
+}
+
+/* comment toggle buttons */
+.commentwrap .btn-comment {
+	width: 28px;
+	height: 28px;
+	cursor: pointer;
+	display: none;
+	position: absolute;
+	background: url(images/nav-icons.png) no-repeat -3px -1436px;
+	background-color: rgba(255,255,255,.4);
+	-webkit-transition: background-color .7s;
+	-moz-transition: background-color .7s;
+	-o-transition: background-color .7s;
+	transition: background-color .7s;
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+}
+.commentwrap .collapse-all, .commentwrap .expand-all {
+	top: 69px;
+	right: 0;
+}
+.commentwrap .expand-all {
+	background-position: -3px -1368px;
+}
+.commentwrap .btn-comment:hover {
+	background-color: #f5ec82;
+	background-color: rgba(245,236,130,.8);
+}
+.commentwrap .expand, .commentwrap .collapse {
+	width: 22px;
+	height: 22px;
+	background-position: -7px -1246px;
+	top: 28px;
+	right: 3px;
+}
+.commentwrap .collapse {
+	background-position: -7px -1304px;
+}
+
+/* btn-comment hover text */
+.commentwrap .btn-comment span {
+	min-width: 90px;
+	text-align: center;
+	letter-spacing: .12em;
+	text-transform: uppercase;
+	position: absolute;
+	top: -28px;
+	left: -37px;
+	z-index: 4;
+	background: #fff;
+	padding: 4px 1px;
+	white-space: nowrap;
+	display: none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.commentwrap .btn-comment span:after {
+    content: " ";
+	font-size: 0px; 
+	line-height: 0%; 
+	width: 0px;
+	position: absolute;
+	bottom: -5px;
+	left: 50%;
+	z-index: 1;
+}
+.commentwrap .btn-comment:hover > span {
+	display: block;
+}
+
+/* comment pagenav */
+.commentwrap .pagenav {
+	margin: 0;
+}
+
+/************************************************************************************
+ 404
+*************************************************************************************/
+.page404 h1 {
+	font-size: 500%;
+}
+.page404 h2 {
+	text-shadow: none;
+	font: italic 230%/120% Baskerville, Georgia, 'Droid Serif', arial, serif;
+	margin: 10px 0 5px;
+}
+.page404 h3 {
+	font: 110% Georgia, 'Droid Serif', arial, serif;
+	text-transform: uppercase;
+	margin: 30px 0 10px;
+	letter-spacing: 0;
+}
+.page404 h4 {
+	margin-top: 50px;
+}
